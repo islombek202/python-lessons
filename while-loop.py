@@ -76,13 +76,35 @@
 #         print(son)
 
 # Amaliyot
-# print("Yoqtirgan kitoblarni ko'rsatuvchi dastur.")
-# savol = "Yoqtirgan kitobingiz nomini kiriting "
-# savol += "(dasturni to'xtatish uchun 'stop' deb yozing): "
-# qiymat = ''
-# while qiymat != 'stop':
-#     qiymat=input(savol)
-#     if qiymat !='stop':
-#         print(qiymat)
-#     else:
-#         print("Dastur ishlashdan to'xtadi.✅")
+# 1-topshiriq
+print("Yoqtirgan kitoblarni ko'rsatuvchi dastur.")
+savol = "Yoqtirgan kitobingiz nomini kiriting "
+savol += "(dasturni to'xtatish uchun 'stop' deb yozing): "
+qiymat = ''
+while qiymat != 'stop':
+    qiymat=input(savol)
+    if qiymat !='stop':
+        print(qiymat)
+    else:
+        print("Dastur ishlashdan to'xtadi.✅")
+
+# 2-topshiriq
+savol="Yoshingiz nechada? Yoshingizni kiriting,sizga chipta narxini chiqarib beramiz: "
+
+while True:
+    print("Agar siz 'exit' va 'quit' deb yozsangiz,dastur to\'xtaydi")
+    yosh =input(savol)
+    if yosh=='exit' or yosh=='quit':
+        print('Dastur to\'xtadi!')
+        break
+
+    yosh=int(yosh)
+    if yosh<7:
+        print("2000 so'm")
+    elif yosh>=7 and yosh<18:
+        print("3000 so'm")
+    elif yosh>=18 and yosh<65:
+        print("10000 so'm")
+    else:
+        print("Bepul")
+     
